@@ -4,9 +4,9 @@ Linters utilizados na Eduzz
 
 ## Frontend
 
-* (React)[./frontend/react/README.md]
-* (React Native)[./frontend/react-native/README.md]
+* [React](./frontend/react/README.md)
+* [React Native](./frontend/react-native/README.md)
 
 ## Backend
 
-* (Node)[./frontend/node/README.md]
+* [Node](./frontend/node/README.md)
