@@ -4,8 +4,7 @@ Recomendamos fortemente o uso do **@eduzz/eslint-config-houston**
 basta seguir o [tutorial aqui](https://eduzz.github.io/houston/eslint)
 ou a [documentação aqui](./default.md).
 
-É caso não seja precisar uma configuração standlone veja a 
-[documentação aqui](./standalone.md), 
+E caso precisar uma configuração standalone veja a [documentação aqui](./standalone.md).  
 **LEMBRAMOS QUE É POSSÍVEL UTILIZAR O @eduzz/eslint-config-houston SOZINHO** 
 
 ## Técnologias envolvidas
@@ -93,6 +92,29 @@ Essa são essas configurações que utilizamos em projetos de react:
     "src/setupTests.ts",
     "analyze.js"
   ]
+}
+```
+
+## Husky e Package.json
+
+Adicione o husky no seu projeto para poder impedir commits que possam quebrar seu build, ele irá verificar o 
+typescript e o eslint:
+
+```bash
+yarn add --dev husky concurrently
+
+yarn husky add .husky/post-merge "yarn install"
+yarn husky add .husky/pre-commit "yarn pre-commit"
+```
+
+```json
+// package.json
+{
+  "scripts": {
+    "prepare": "yarn husky install",
+    "lint": "yarn eslint \"./src/**/*.ts\" \"./src/**/*.tsx\"",
+    "pre-commit": "yarn concurrently -r \"yarn lint\" \"yarn tsc --noEmit\""
+  }
 }
 ```
 
