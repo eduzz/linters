@@ -9,4 +9,4 @@ Linters utilizados na Eduzz
 
 ## Backend
 
-* [Node](./frontend/node/README.md)
+* [Node](./backend/node/README.md)
