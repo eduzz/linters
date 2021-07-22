@@ -70,7 +70,7 @@ Adicione as configurações abaixo para poder debuggar no VSCode:
 
 ## Docker
 
-(Veja aqui)[./docker.md] a documentações do docker.
+[Veja aqui](./docker.md) a documentações do docker.
 
 ## Typescript
 
