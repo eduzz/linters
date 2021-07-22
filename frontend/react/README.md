@@ -19,7 +19,7 @@ E caso precisar uma configuração standalone veja a [documentação aqui](./sta
   **SUGERIMOS DESISTALAR OU DESATIVAR A EXTENSÃO DO PRETTIER POIS O ESLINT QUE APLICARÁ O PRETTIER.**
 
 * Crie/Adicione no .vscode/settings.json (não na suas configurações, pois assim ficará no projeto e o time já terá acesso):
-```json
+```jsonc
 {
   //... suas configurações
   "editor.codeActionsOnSave": {
@@ -43,7 +43,7 @@ E caso precisar uma configuração standalone veja a [documentação aqui](./sta
 
 Essa são essas configurações que utilizamos em projetos de react:
 
-```json
+```jsonc
 {
   "compilerOptions": {
     "outDir": "build/dist",
@@ -104,7 +104,7 @@ npx react-codemod update-react-imports
 ```
 
 tsconfig.json
-```json
+```jsonc
 {
   //... suas configurações
   "compilerOptions": {
@@ -114,7 +114,7 @@ tsconfig.json
 ```
 
 .eslintrc
-```json
+```jsonc
 {
   "extends": ["@eduzz/eslint-config-houston"],
   "rules": {
@@ -137,7 +137,7 @@ yarn husky add .husky/post-merge "yarn install"
 yarn husky add .husky/pre-commit "yarn pre-commit"
 ```
 
-```json
+```jsonc
 // package.json
 {
   "scripts": {

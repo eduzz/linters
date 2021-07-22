@@ -12,7 +12,7 @@ npm install --save-dev @eduzz/eslint-config-houston @typescript-eslint/eslint-pl
 
 ## .eslintrc
 
-```json
+```jsonc
 {
   "extends": ["@eduzz/eslint-config-houston/node"],
   "rules": {

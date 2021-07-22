@@ -22,7 +22,7 @@ Utilize o [NestJS](https://nestjs.com/) como framework padrão, tanto para API c
   **SUGERIMOS DESISTALAR OU DESATIVAR A EXTENSÃO DO PRETTIER POIS O ESLINT QUE APLICARÁ O PRETTIER.**
 
 * Crie/Adicione no .vscode/settings.json (não na suas configurações, pois assim ficará no projeto e o time já terá acesso):
-```json
+```jsonc
 {
   //... suas configurações
   "editor.codeActionsOnSave": {
@@ -44,7 +44,7 @@ Utilize o [NestJS](https://nestjs.com/) como framework padrão, tanto para API c
 
 Adicione as configurações abaixo para poder debuggar no VSCode:
 
-```json
+```jsonc
 //.vscode/launch.json
 {
   "version": "0.2.0",
@@ -80,7 +80,7 @@ Essa são essas configurações que utilizamos em projetos com node:
 yarn add --dev ts-node-dev
 ```
 
-```json
+```jsonc
 //tsconfig.json
 {
   "compilerOptions": {
@@ -128,7 +128,7 @@ yarn add --dev ts-node-dev
 }
 ```
 
-```json
+```jsonc
 // package.json
 {
   "scripts": {
@@ -148,7 +148,7 @@ Para mapear os imports para **~/...**. Ex. from '../../../module/service' -> '~/
 yarn add module-alias source-map-support
 ```
 
-```json
+```jsonc
 //tsconfig.json
 {
   "compilerOptions": {
@@ -192,7 +192,7 @@ yarn husky add .husky/post-merge "yarn install"
 yarn husky add .husky/pre-commit "yarn pre-commit"
 ```
 
-```json
+```jsonc
 // package.json
 {
   "scripts": {

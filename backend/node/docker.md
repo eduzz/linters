@@ -44,7 +44,7 @@ services:
 
 Adicione as configurações abaixo para poder debuggar no VSCode:
 
-```json
+```jsonc
 //.vscode/launch.json
 {
   "version": "0.2.0",

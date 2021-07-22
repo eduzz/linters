@@ -12,7 +12,7 @@ npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parse
 
 ## .eslintrc
 
-```json
+```jsonc
 {
   "settings": {
     "react": {
@@ -107,7 +107,7 @@ npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parse
 ```
 
 ## .prettierrc
-```json
+```jsonc
 {
   "singleQuote": true,
   "jsxSingleQuote": true,
