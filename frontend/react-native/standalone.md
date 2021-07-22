@@ -18,7 +18,7 @@ npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parse
     "react": {
       "version": "detect"
     },
-    "import/internal-regex": "(^@eduzz|react)"
+    "import/internal-regex": "(^@eduzz|react|^~)"
   },
   "plugins": ["react", "react-native", "react-hooks", "prettier", "eslint-plugin-unused-imports"],
   "extends": [
@@ -82,7 +82,7 @@ npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parse
       "pathGroups": [
         { "pattern": "react", "group": "external", "position": "before" },
         { "pattern": "@eduzz/**", "group": "internal", "position": "after" },
-        { "pattern": "~/**", "group": "internal", "position": "after" },
+        { "pattern": "~/**", "group": "internal", "position": "after" }
       ]
     }],
     "@typescript-eslint/no-unused-vars": ["warn"],
