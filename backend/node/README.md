@@ -42,6 +42,36 @@ Utilize o [NestJS](https://nestjs.com/) como framework padrão, tanto para API c
 }
 ```
 
+Adicione as configurações abaixo para poder debuggar no VSCode:
+
+```json
+//.vscode/launch.json
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "type": "node",
+    "request": "attach",
+    "name": "Debug",
+    "address": "127.0.0.1",
+    "port": 9229,
+    "protocol": "inspector",
+    "restart": true,
+    "sourceMaps": true,
+    "sourceMapPathOverrides": {
+      "/server/*": "${workspaceRoot}/*"
+    },
+    "skipFiles": [
+      "${workspaceRoot}/node_modules/**/*.js",
+      "<node_internals>/**/*.js"
+    ]
+  }]
+}
+```
+
+## Docker
+
+(Veja aqui)[./docker.md] a documentações do docker.
+
 ## Typescript
 
 Essa são essas configurações que utilizamos em projetos com node:
